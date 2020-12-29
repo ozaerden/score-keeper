@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Keeper</title>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    
     <style>
         .winner {
             color: green;
         }
-
         .loser {
             color: red;
         }
@@ -18,24 +18,51 @@
 </head>
 
 <body>
-    <h1><span id="team1score">0</span> to <span id="team2score">0</span></h1>
-
-    <select name="" id="playTo">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-    </select>
-
-    <button id="team1button">+1 Team One</button>
-    <button id="resetButton">Reset</button>
-    <button id="team2button">+1 Team Two</button>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter"> <!-- Half sized and centered div --> 
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="https://images.unsplash.com/photo-1475440197469-e367ec8eeb19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="broken-img">
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                      <p class="card-header-title is-size-3 has-text-centered">
+                        SCORE KEEPER
+                      </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 title is-1><span id="team1score">0</span> to <span id="team2score">0</span></h1>
+                            <p class="subtitle">Use the buttons below to keep score!</p>
+                      
+                            <label for="playingTo" class="label is-large is-inline">Playing To: </label>
+                            <div class="select is-rounded">
+                                <select name="" id="playingTo">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="team1button" class="is-primary button card-footer-item">+1 Team One</button>
+                        <button id="resetButton" class="is-danger button card-footer-item">Reset Score</button>
+                        <button id="team2button" class="is-info button card-footer-item">+1 Team Two</button>
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

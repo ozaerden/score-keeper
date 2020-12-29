@@ -3,7 +3,7 @@ const team2score = document.querySelector('#team2score');
 const team1button = document.querySelector('#team1button');
 const team2button = document.querySelector('#team2button');
 const resetButton = document.querySelector("#resetButton");
-const scoreSelect = document.querySelector("#playTo");
+const scoreSelect = document.querySelector("#playingTo");
 
 let t1score = 0;
 let t2score = 0;
