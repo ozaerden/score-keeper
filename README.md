@@ -1,4 +1,4 @@
-# score-keeper
+# Score Keeper
 
-EventListener Demo Work
+You can pick the score limit and keep your scores instantly.
  
